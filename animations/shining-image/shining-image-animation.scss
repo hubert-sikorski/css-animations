@@ -1,0 +1,50 @@
+.shining-image-animation {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(#fff, .6);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(60px);
+    transform: translateX(-200%)  skewX(-15deg);
+    animation: shine-before 7s infinite;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(#fff, .3);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(100px);
+    transform: translateX(-100%) skewX(-15deg);
+    animation: shine-after 7s infinite;
+  }
+
+  @keyframes shine-before {
+    100% {
+      transform: translateX(600%)  skewX(-15deg);
+      opacity: 0.6;
+      transition: .7s;
+    }
+  }
+
+  @keyframes shine-after {
+    100% {
+      transform: translateX(800%) skewX(-15deg);
+      opacity: 1;
+      transition: .7s;
+    }
+  }
+}

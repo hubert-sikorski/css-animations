@@ -1,15 +1,15 @@
 .shining-text-animation p {
   position: relative;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(darkgrey), color-stop(lightgrey), to(darkgrey));
-  background: linear-gradient(90deg, darkgrey, lightgrey, darkgrey);
+  background: -webkit-gradient(linear, left top, right top, from(dimgrey), color-stop(lightgrey), to(dimgrey));
+  background: linear-gradient(90deg, dimgrey, lightgrey, dimgrey);
   background-repeat: no-repeat;
   background-size: 75%;
   -webkit-animation: shine 6s linear infinite;
           animation: shine 6s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(169, 169, 169, 0.7);
+  -webkit-text-fill-color: rgba(105, 105, 105, 0.7);
 }
 
 @-webkit-keyframes shine {

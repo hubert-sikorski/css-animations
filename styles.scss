@@ -14,8 +14,10 @@ html {
     justify-content: center;
     text-align: center;
 
-    & * {
-      margin: 16px auto;
+    .animation {
+      margin: 24px 0;
+      max-width: 225px;
+      max-height: 225px;
     }
 
     .animated-dot {
@@ -26,8 +28,8 @@ html {
     }
 
     .animated-text {
-      font-size: 24px;
+      font-size: 30px;
+      margin: 0;
     }
   }
 }
-
